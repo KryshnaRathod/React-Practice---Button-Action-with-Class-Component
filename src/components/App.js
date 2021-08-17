@@ -11,22 +11,22 @@ class App extends Component {
 
     render() {
     	return(
-    	    <div id="main">
+    	   <div id="main">
 	      <button 
 		id ='click' 
 		onClick={() => {
 		 this.setState({pHidden:false});
-	}}
-	>
+	        }}
+	      >
 		Show Para
-               </button>
+              </button>
                {this.state.pHidden ? null :(
 	        <p id ="para">
 	          Hello,I've learnt to use the full-stack evaluation tool.This makes me so happy
 
-	        </p>
+	        </p> 
 	     )}
-            </div>
+           </div>
     	);
     }
 }
