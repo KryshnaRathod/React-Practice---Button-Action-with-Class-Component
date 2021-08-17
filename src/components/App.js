@@ -12,11 +12,13 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-		<button id ='click' onClick={() => this.setState({pHidden:false});
-    }}
->
-	        Show Para
-		</button>
+		<button id ='click' 
+		onClick={() => {
+		this.setState({pHidden:false});
+	}}
+	>
+            Show Para
+        </button>
                {this.state.pHidden ? null :(
 	        <p id ="para"
 	          hello,I've learnt to use the full-stack evaluation tool.This makes me so happy
